@@ -1,8 +1,39 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>il.org.tibc</groupId>
   <artifactId>translationServer</artifactId>
   <version>3.1.0</version>
   <name>sbml2smw-3.1.0-translationServer</name>
   <description>This REST service receives posting from CellDesigner and "translates" them to SMW 3.1.0 server</description>
+  <dependencies>
+  	<dependency>
+  		<groupId>net.sourceforge</groupId>
+  		<artifactId>jwbf</artifactId>
+  		<version>3.1.1</version>
+  	</dependency>
+  	<dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>javax.servlet-api</artifactId>
+        <version>3.0.1</version>
+    </dependency>
+	<dependency>
+    <groupId>org.openrdf.sesame</groupId>
+    <artifactId>sesame-repository-sail</artifactId>
+    <version>4.1.2</version>
+	</dependency>
+	<dependency>
+    <groupId>org.openrdf.sesame</groupId>
+    <artifactId>sesame-sail-memory</artifactId>
+    <version>4.1.2</version>
+	</dependency>
+
+<dependency>
+    <groupId>org.mortbay.jetty</groupId>
+    <artifactId>jetty</artifactId>
+    <version>6.1.24</version>
+</dependency>
+    
+  </dependencies>
 </project>

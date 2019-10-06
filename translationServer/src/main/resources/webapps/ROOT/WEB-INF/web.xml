@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd" [ <!ENTITY  fajaxfragment SYSTEM "../ajax/fajaxfragment.xml" >
+<!ENTITY  webcontextparam SYSTEM "../ajax/webcontextparam.xml" >
+] >
+<web-app>
+	
+	<!-- Ideally this should be in a fbase webapps folder as include  /-->
+
+  <servlet>
+		<servlet-name>storeSpecies</servlet-name>
+		<display-name>storeSpecies</display-name>
+		<servlet-class>
+			il.org.tibc.sbml2smw.tS.StoreSpeciesServlet
+        </servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>storeSpecies</servlet-name>
+		<url-pattern>/store/species/*</url-pattern>
+	</servlet-mapping>
+ 
+ 	<servlet>
+		<servlet-name>storeReaction</servlet-name>
+		<display-name>storeReaction</display-name>
+		<servlet-class>
+		    il.org.tibc.sbml2smw.tS.StoreReactionServlet
+     </servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>storeReaction</servlet-name>
+		<url-pattern>/store/reaction/*</url-pattern>
+	</servlet-mapping>
+ 
+ 
+ <servlet>
+		<servlet-name>storeModification</servlet-name>
+		<display-name>storeModification</display-name>
+		<servlet-class>
+		     il.org.tibc.sbml2smw.tS.StoreModificationServlet
+     </servlet-class>
+</servlet>
+
+	<servlet-mapping>
+		<servlet-name>storeModification</servlet-name>
+		<url-pattern>/store/modification/*</url-pattern>
+	</servlet-mapping> 
+ <servlet>
+		<servlet-name>loadReaction</servlet-name>
+		<display-name>loadReaction</display-name>
+		<servlet-class>
+			il.org.tibc.sbml2smw.tS.LoadReactionServlet
+        </servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>loadReaction</servlet-name>
+		<url-pattern>/load/reaction/*</url-pattern>
+	</servlet-mapping>
+ 
+ </web-app>

@@ -10,7 +10,7 @@
 		<servlet-name>storeSpecies</servlet-name>
 		<display-name>storeSpecies</display-name>
 		<servlet-class>
-			translationServer.StoreSpeciesServlet
+			il.org.tibc.sbml2smw.tS.StoreSpeciesServlet
         </servlet-class>
 	</servlet>
 
@@ -23,7 +23,7 @@
 		<servlet-name>storeReaction</servlet-name>
 		<display-name>storeReaction</display-name>
 		<servlet-class>
-		     translationServer.StoreReactionServlet
+		    il.org.tibc.sbml2smw.tS.StoreReactionServlet
      </servlet-class>
 	</servlet>
 
@@ -37,26 +37,21 @@
 		<servlet-name>storeModification</servlet-name>
 		<display-name>storeModification</display-name>
 		<servlet-class>
-		     translationServer.StoreModificationServlet
+		     il.org.tibc.sbml2smw.tS.StoreModificationServlet
      </servlet-class>
-	</servlet>
+</servlet>
 
 	<servlet-mapping>
 		<servlet-name>storeModification</servlet-name>
 		<url-pattern>/store/modification/*</url-pattern>
-	</servlet-mapping>
- 
- 
- 
- 
+	</servlet-mapping> 
  <servlet>
 		<servlet-name>loadReaction</servlet-name>
 		<display-name>loadReaction</display-name>
 		<servlet-class>
-			translationServer.LoadReactionServlet
+			il.org.tibc.sbml2smw.tS.LoadReactionServlet
         </servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>loadReaction</servlet-name>
 		<url-pattern>/load/reaction/*</url-pattern>
